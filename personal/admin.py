@@ -8,6 +8,10 @@ class AccountAdmin(admin.ModelAdmin):
 admin.site.register(Account, AccountAdmin)
 
 class BudgetAdmin(admin.ModelAdmin):
+    '''
+    TODO: should not be able to save value if total for parent exceeds budgeted amount
+    
+    '''
     pass
 admin.site.register(Budget, BudgetAdmin)
 

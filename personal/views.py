@@ -33,3 +33,35 @@ def initial_file_process(description):
     transaction_category = next((transaction_category.category for transaction in transaction_category.objects.filter() if transaction.match in description), None)
     
     return transaction_category
+
+#----------------------------------------------------------------------
+def chart_monthly_expenditure(request, date_range):
+    """
+    
+    """
+    return
+
+def chart_income_expendature(request, date_range):
+    """
+    double line graph
+    """
+    return
+
+def chart_budget_comparison(request, date_range):
+    """
+    two comparitive pie charts split by category
+    """
+    return
+
+def chart_budget(request, date_range):
+    """
+    
+    """
+    return
+
+    
+'''
+interium import - import all trasactions and list, allowing selection of category for each
+
+bonus filtering
+'''
